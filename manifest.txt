@@ -1,0 +1,7 @@
+CACHE MANIFEST
+# Version 1
+
+CACHE:
+assets/css/index.css
+assets/js/index.js
+node_modules/jquery/dist/jquery.min.js

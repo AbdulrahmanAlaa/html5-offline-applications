@@ -1,0 +1,26 @@
+{
+  "name": "html5-offline-applications",
+  "version": "1.0.0",
+  "description": "Advanced HTML5 Tech to work with html5 new application cache and events",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AbdulrahmanAlaa/html5-offline-applications.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AbdulrahmanAlaa/html5-offline-applications/issues"
+  },
+  "homepage": "https://github.com/AbdulrahmanAlaa/html5-offline-applications#readme",
+  "dependencies": {
+    "jquery": "^3.3.1"
+  },
+  "devDependencies": {
+    "@types/jquery": "^3.3.1"
+  }
+}

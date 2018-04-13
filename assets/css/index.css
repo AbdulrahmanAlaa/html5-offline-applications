@@ -1,0 +1,14 @@
+#eventLogContainer{
+    background: lightblue;
+    text-align: center;
+    margin: auto;
+    padding: 50px;
+    border: 1px solid aliceblue;
+    border-radius: 20px;
+    font-family: sans-serif;
+    
+}
+#eventLogContainer li{
+        list-style: none;
+        list-style-type: none;
+}
