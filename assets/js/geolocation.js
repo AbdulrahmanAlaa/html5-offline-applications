@@ -7,7 +7,7 @@ $(function () {
         if (navigator.geolocation) {
             var options = {
                 enableHighAccuracy: true, // Default false
-                timeout: 2000, // Default is no limit
+                timeout: 4000, // Default is no limit
                 maximumAge: 1000 // Default for caching time is 0
             }
             navigator.geolocation.getCurrentPosition(showPositionHandler, positionErrorHandler, options);
@@ -15,14 +15,16 @@ $(function () {
     }
 
     function showPositionHandler(position) {
-        $('#longitude').text(position.coords.longitude);
-        $('#latitude').text(position.coords.latitude);
-        $('#altitude').text(position.coords.altitude);
-        $('#accuracy').text(position.coords.accuracy);
-        $('#altitudeAcc').text(position.coords.altitudeAccuracy);
-        $('#heading').text(position.coords.heading);
-        $('#speed').text(position.coords.speed);
-        $('#time').text(position.coords.timestamp);
+        $('#alertPosition').hide();
+        $('#longitude').val(position.coords.longitude);
+        $('#latitude').val(position.coords.latitude);
+        $('#altitude').val(position.coords.altitude);
+        $('#accuracy').val(position.coords.accuracy);
+        $('#altitudeAcc').val(position.coords.altitudeAccuracy);
+        $('#heading').val(position.coords.heading);
+        $('#speed').val(position.coords.speed);
+        $('#time').val(position.coords.timestamp);
+        console.log(position.coords);
     }
 
     function positionErrorHandler(e) {

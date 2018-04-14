@@ -4,7 +4,7 @@
   "description": "Advanced HTML5 Tech to work with html5 new application cache and events",
   "main": "index.js",
   "scripts": {
-    "start": "http-server -c-1 | json-server --watch assets/db.json"
+    "start": "http-server -c-1 --ssl | json-server --watch assets/db.json"
   },
   "repository": {
     "type": "git",
