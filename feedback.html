@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="assets/css/feedback.css">
-    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="/assets/css/feedback.css">
+    <link rel="stylesheet" href="/assets/css/index.css">
     <link rel="stylesheet" href="/node_modules/toastr/build/toastr.css">
     <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
     <title>Feed Back</title>
@@ -15,12 +15,15 @@
 <body>
     <div class="container">
         <div class="row">
+            <a href="/index.html">Home</a>
             <div class="col-md-6">
-                <h3>You are <span id="status"></span></h3>
+                <h3>You are
+                    <span id="status"></span>
+                </h3>
                 <div class="form-group">
                     <textarea class="form-control" name="" id="txtArea" cols="30" rows="10"></textarea>
                 </div>
-                <button id="btnSend" class="btn btn-primary" >Send Feed Back</button>
+                <button id="btnSend" class="btn btn-primary">Send Feed Back</button>
             </div>
             <div id="eventLogContainer" class="col-md-6">
                 <ul id="log"></ul>

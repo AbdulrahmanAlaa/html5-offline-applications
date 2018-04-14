@@ -3,5 +3,8 @@ CACHE MANIFEST
 
 CACHE:
 assets/css/index.css
+/node_modules/bootstrap/dist/css/bootstrap.min.css
+
 assets/js/index.js
 node_modules/jquery/dist/jquery.min.js
+/node_modules/bootstrap/dist/js/bootstrap.min.js

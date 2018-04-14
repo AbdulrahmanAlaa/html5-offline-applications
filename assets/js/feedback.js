@@ -1,3 +1,4 @@
+'use strict';
 $(function () {
     var status = $('#status');
     var messages = [];

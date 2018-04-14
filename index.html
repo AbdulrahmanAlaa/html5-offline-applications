@@ -4,12 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="/assets/css/index.css">
     <title>Advanced HTML5</title>
 </head>
 <body>
     <div id="eventLogContainer">
-        <a href="FeedBack.html">Feed Back</a>
+        
+        <nav class="navbar navbar-inverse">
+            <a class="navbar-brand" href="#">Advanced HTML5</a>
+            <ul class="nav navbar-nav">
+                <li class="active">
+                    <a href="/">Home</a>
+                </li>
+                <li>
+                    <a href="/feedback.html">Feed Back</a>
+                </li>
+                </li>
+                <li>
+                    <a href="/geolocation.html">Geo Location</a>
+                </li>
+            </ul>
+        </nav>
+        
         <h1>Caching Events Three</h2>
         <div>
             <h2>Event Log</h2>
@@ -17,6 +34,7 @@
         </div>
     </div>
     <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="assets/js/index.js"></script>
 </body>
 </html>
