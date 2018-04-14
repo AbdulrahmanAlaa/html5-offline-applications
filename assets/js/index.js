@@ -1,12 +1,12 @@
 'use strict';
+
+function logEvent(text) {
+    $('#log').append($('<li>' + text + '</li>'))
+}
 $(function () {
 
     function onload() {
         logEvent('Window Load');
-    }
-
-    function logEvent(text) {
-        $('#log').append($('<li>' + text + '</li>'))
     }
 
     if (window.applicationCache) {

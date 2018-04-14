@@ -1,7 +1,14 @@
 CACHE MANIFEST
-# Version 1.0
+# Version 1.1
 
 CACHE:
-assets/css/feedback.css
-assets/js/feedback.js
-node_modules/jquery/dist/jquery.min.js
+/assets/css/index.css
+/assets/css/feedback.css
+/node_modules/toastr/build/toastr.css
+/node_modules/bootstrap/dist/css/bootstrap.min.css
+
+/assets/js/index.js
+/assets/js/feedback.js
+/node_modules/jquery/dist/jquery.min.js
+/node_modules/toastr/build/toastr.min.js
+/node_modules/bootstrap/dist/js/bootstrap.min.js

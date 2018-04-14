@@ -20,16 +20,11 @@ $(function () {
     }
 
     function sendMessagesToServer() {
-        messages.map(function (item) {
-            $.ajax(
-                {
-                    method: 'POST',
-                    url: 'assets/db.json',
-                    data: { id: Math.random() * 10, message: item }
-                }
-            );
-        });
-        messages = [];
+        var item = null;
+        while(messages.length > 0){
+            item  = messages.shift();
+            storeMessageRemote(item);
+        }
     }
 
     function reportOnlineStatus() {
@@ -52,14 +47,26 @@ $(function () {
 
     function storeMessageLocal(msg) {
         messages.push(msg);
+        logEvent(msg + ' Stored to Local');
+        toastr.warning(msg + '  Stored to Local');
+
     }
 
     function storeMessageRemote(msg) {
         $.ajax(
             {
                 method: 'POST',
-                url: 'assets/db.json',
-                data: { id: Math.random() * 10, message: msg }
+                url: 'http://localhost:3000/feedbacks',
+                data: { id: Math.random() * 10, message: msg },
+                success: function (data) {
+                    toastr.success(msg + ' Posted to Remote Server');
+                    logEvent(msg + ' Posted to Remote Server');
+                },
+                error: function (error) {
+                    console.log(error);
+                    toastr.error('Failed to Send: ' + msg);
+                    logEvent('Failed to Send: ' + msg);
+                }
             }
         );
     }
