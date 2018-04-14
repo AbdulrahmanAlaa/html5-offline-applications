@@ -4,7 +4,7 @@
   "description": "Advanced HTML5 Tech to work with html5 new application cache and events",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "http-server -c-1 && json-server --watch db.json"
   },
   "repository": {
     "type": "git",
@@ -21,6 +21,7 @@
     "jquery": "^3.3.1"
   },
   "devDependencies": {
+    "json-server": "^0.12.1",
     "@types/jquery": "^3.3.1"
   }
 }
