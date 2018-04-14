@@ -2,6 +2,6 @@ CACHE MANIFEST
 # Version 1.0
 
 CACHE:
-assets/css/index.css
-assets/js/index.js
+assets/css/feedback.css
+assets/js/feedback.js
 node_modules/jquery/dist/jquery.min.js

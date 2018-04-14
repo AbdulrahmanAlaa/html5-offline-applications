@@ -1,7 +1,7 @@
 'use strict';
 $(function () {
 
-    window.onload = function () {
+    function onload() {
         logEvent('Window Load');
     }
 
@@ -25,6 +25,8 @@ $(function () {
             window.applicationCache.swapCache();
             window.location.reload();
         }
-       
     }
+    window.addEventListener('load', onload);
+
+
 });
