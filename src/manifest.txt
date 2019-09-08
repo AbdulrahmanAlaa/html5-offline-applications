@@ -1,0 +1,10 @@
+CACHE MANIFEST
+# Version 1.0
+
+CACHE:
+#assets/css/index.css
+#/node_modules/bootstrap/dist/css/bootstrap.min.css
+
+index.js
+#node_modules/jquery/dist/jquery.min.js
+#/node_modules/bootstrap/dist/js/bootstrap.min.js
